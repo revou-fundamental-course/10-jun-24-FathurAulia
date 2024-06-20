@@ -1,0 +1,141 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #FFEB3B, #FF9800);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+/* Main container */
+.container {
+    background: linear-gradient(to bottom, #fdce00, #fa7500);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
+    width: 100%;
+    display: flex;
+}
+
+/* Content left */
+.content-left {
+    max-width: 50%; /* Maksimum setengah dari lebar kontainer utama */
+    width: 100%;
+    text-align: left;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.content-left h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.content-left p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* Calculator right */
+.calculator-right {
+    max-width: 50%; /* Maksimum setengah dari lebar kontainer utama */
+    width: 100%;
+    display: flex; /* Gunakan flex untuk menata elemen di dalamnya */
+    flex-direction: column; /* Tampilkan elemen secara vertikal */
+}
+
+.calculator {
+    background: #fff3e0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Pastikan kalkulator mengisi seluruh lebar kontainer-right */
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    background: #ffe0b2;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.tabs button.active {
+    background: #ffb400;
+    color: #fff;
+}
+
+/* Inputs and button */
+input[type="number"],
+input[type="text"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+button {
+    background: #ffb400;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e0a300;
+}
+
+/* Formula */
+#formula {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-left,
+    .calculator-right {
+        max-width: 100%;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .content-left {
+        padding: 15px;
+    }
+
+    .calculator {
+        padding: 15px;
+    }
+}

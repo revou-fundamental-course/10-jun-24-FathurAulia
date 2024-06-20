@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Konversi Suhu Celcius & Fahrenheit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content-left">
+        <h1>Kalkulator Konversi Suhu Celcius & Fahrenheit</h1>
+        <p>
+            Selamat datang di halaman kalkulator konversi suhu! Apakah Anda perlu mengonversi suhu dari Celcius ke Fahrenheit atau sebaliknya? Alat konversi suhu ini dirancang untuk memudahkan proses tersebut dengan cepat dan akurat.
+        </p>
+    </div>
+    <div class="calculator-right">
+        <main class="container">
+            <section class="calculator">
+                <div class="tabs">
+                    <button id="celsiusTab" class="active">Celcius</button>
+                    <button id="fahrenheitTab">Fahrenheit</button>
+                </div>
+                <input type="number" id="inputValue" placeholder="Masukkan nilai">
+                <input type="number" id="outputValue" placeholder="Hasil" readonly>
+                <button id="calculateButton">Hitung</button>
+                <p id="formula">Rumus Celcius to Fahrenheit<br> <span id="formulaDetail">°C to °F: (°C × 9/5) + 32</span></p>
+            </section>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
